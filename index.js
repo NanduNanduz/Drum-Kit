@@ -1,7 +1,14 @@
 
-document.querySelector("button").addEventListener("click", function () {
-  alert("I got clicked");
+var numberOfDrumButtons = document.querySelectorAll(".drum").length;
 
-  //what to do when click detected.
-});
+for (var i = 0; i < numberOfDrumButtons; i++){
+
+     document.querySelectorAll(".drum")[i].addEventListener("click", function () {
+       alert("I got clicked");
+
+       //what to do when click detected.
+     });
+
+}
+ 
 
