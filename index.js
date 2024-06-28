@@ -43,8 +43,12 @@ for (var i = 0; i < numberOfDrumButtons; i++) {
        break;
 
      default:
-       break;
+      
    }
     //what to do when click detected.
   });
 }
+
+document.addEventListener("keypress", function (event) {
+  console.log(event);
+});
